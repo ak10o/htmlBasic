@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<!-- For is used so that it can be linked to the specific value like 
+		for=firstname is linked with an id=firstname-->
+	<form>
+		<label for="Firstname">First Name</label>
+			<input type="text" id="Firstname" placeholder="Avinash" name = "firstName" required>
+		<label for="Lastname">Last Name</label>
+			<input type="text" id="Lastname" placeholder="Kumar" name="lastName" required>
+		<!-- div can be used just like an line break . So we can either go with div or any other block element or
+		 	 we can even use </br> tag-->	
+		<div>
+			<label>Male
+				<!-- the name attribute allow only one choice to get selected-->
+				<input type="radio" name="gender" value="Male">
+			</label>
+			<label>Female
+				<input type="radio" name="gender" value="Female">
+			</label>
+			<label>Other
+				<input type="radio" name="gender" value="Other"></br>
+			</label>
+		</div>
+		<div>
+			<label for="email">Email</label>
+				<input name="email" type="email" id="email" placeholder="email" required>
+			<label for="pass">Password
+				<!-- We can use the minlength="5" and maxlength="10" attribute also instead of patter attribute
+					 -->
+				<input name="password" type="Password" id="pass" placeholder="password" pattern=".{5,10}" required title="should be
+					between 5 to 10 character">
+			</label>
+		</div>
+		<div>
+			<label>
+				Birthday: 
+				<!-- We can either go with this or with the type="Date" attribute .In this example we will go with the type attribute
+					 instead of dropdown menu-->			
+				
+				<!-- <select name="month">
+					<option>month</option>
+					<option>Jan</option>
+					<option>Feb</option>
+					<option>March</option>
+				</select>
+				<select month="day">
+					<option>Day</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+				</select>
+				<select day="year">
+					<option>Year</option>
+					<option>2018</option>
+					<option>2017</option>
+					<option>2016</option>
+				</select>
+			</label> -->
+		
+		<label for="birthday">Birthday
+			<input type="Date" name="birthday">	</br>
+		</label>	
+		</div>
+		<div>
+			<label for="condition">I agree to the terms and conditions
+				<input type="checkbox" id="condition" required></br>
+			</label>
+		</div>
+		<input type="submit">
+	</form>	
+</body>
+</html>
