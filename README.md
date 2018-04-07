@@ -4,4 +4,4 @@ The HTML files are in this order:-
   1. list_assignment
   2. image_assignment
   3. pokemon chart
-  4  SignupPage
+  4.  SignupPage
